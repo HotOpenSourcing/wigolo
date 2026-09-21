@@ -43,10 +43,10 @@
     "agent-tools"
   ],
   "scripts": {
-    "build": "tsup && tsc -p tsconfig.build.json",
-    "build:binary": "npm run build && node packaging/binary/bundle.mjs && bash packaging/binary/pack.sh",
-    "build:watch": "tsup --watch",
-    "dev": "tsx src/index.ts",
+    "build": "node init && tsup && tsc -p tsconfig.build.json",
+    "build:binary": "node init && npm run build && node packaging/binary/bundle.mjs && bash packaging/binary/pack.sh",
+    "build:watch": "node init && tsup --watch",
+    "dev": "node init && tsx src/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:unit": "vitest run tests/unit",

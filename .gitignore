@@ -17,7 +17,6 @@ packaging/binary/dist/
 .wigolo/
 
 # Secrets
-.env
 
 # Test coverage
 coverage/
@@ -35,7 +34,6 @@ Thumbs.db
 
 # IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 
@@ -63,3 +61,4 @@ competitive-blueprint.md
 .venv/
 .pytest_cache/
 *.egg-info
+config.bat
